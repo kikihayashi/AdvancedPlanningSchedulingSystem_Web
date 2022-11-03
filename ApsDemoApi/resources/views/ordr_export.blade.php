@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Lot</th>
+            <th>機種</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>出貨日期</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($tableData['ordr'] as $ordr)
+        <tr>
+            <td>{{$ordr['lot_no']}}</td>
+            <td>{{$ordr['item_code']}}</td>
+            <td>{{$ordr['cost']}}</td>
+            <td>{{$ordr['this_month_number']}}</td>
+            <td>{{$ordr['shippingDate']}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>

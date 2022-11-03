@@ -1,0 +1,234 @@
+/* 共用項目------------------------------------------------------------------*/
+
+.identity-form-div .input-large {
+    vertical-align: middle !important;
+    padding-left: 2%;
+    font-size: 15px;
+    text-align: left;
+    width: 180px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+}
+
+/* 使用者 user.blade.php------------------------------------------------------------------*/
+
+#user-section {
+    margin-right: 8%;
+    margin-left: 4%;
+    margin-bottom: 8%;
+}
+
+#user-title {
+    color: #1b8522;
+    caption-side: top;
+    font-style: italic;
+}
+
+#user-table {
+    width: 100% !important;
+}
+
+#user-table tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+/* 查詢機種 */
+#user-table_filter {
+    text-align: left;
+    float: none;
+}
+
+/* 查詢機種 label */
+#user-table_filter label {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+/* 查詢機種 input */
+#user-table_filter input {
+    padding-left: 15px;
+    margin-left: 0;
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+}
+
+/* 分頁設置 */
+#user-table_paginate {
+    text-align: center;
+    float: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* 靠近按鈕時設置 */
+#user-table_paginate .paginate_button:hover {
+    background: none !important;
+    border-color: #00C1DE !important;
+    color: #00C1DE !important;
+}
+
+/* 當前頁面按鈕 */
+#user-table_paginate .paginate_button.current {
+    background: #00C1DE !important;
+    border-color: #00C1DE !important;
+    color: #FFFFFF !important;
+
+}
+
+/* 當前頁面為第一頁，或最後一頁時的前後按鈕 */
+#user-table_paginate .paginate_button.disabled {
+    display: none !important;
+}
+
+/* "顯示幾筆資料的設置" */
+#user-table_length label {
+    font-size: 15px !important;
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+}
+
+#user-table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#user-table td {
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#user-delete-btn {
+    margin-right: 10px;
+}
+
+/* SAP上傳按鈕 */
+#user-btn-register {
+    border-color: #5BC0DE;
+    background: #5BC0DE;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+/* 主要內容 */
+.content-wrapper-identity {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.content-wrapper-identity table>thead>tr>th>div {
+    margin: 0 auto;
+}
+
+.content-wrapper-identity table>thead>tr>th {
+    text-align: center !important;
+}
+
+.identity-table {
+    /* border: none !important; */
+    width: 90%;
+
+}
+
+/* 角色 role.blade.php-------------------------------------------------------------------------------------------*/
+#role-table {
+    width: 100% !important;
+}
+
+#role-table tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+#role-table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#role-table td {
+
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#edit-button-role-not-used {
+    width: 118px;
+    pointer-events: none;
+    background-color: #b8b8b8;
+    color: #f5f5f5;
+}
+
+
+/* 權限 permission.blade.php-------------------------------------------------------------------------------------------*/
+#permission-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 130px;
+    padding-bottom: 3%;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+#permission-div {
+    margin-right: 20%;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.permission-td {
+    text-align: center !important;
+}
+
+#edit-button-permission-not-used {
+    pointer-events: none;
+    background-color: #b8b8b8;
+    color: #f5f5f5;
+}
+
+#permission-table {
+    width: 100% !important;
+}
+
+#permission-table tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+#permission-table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#permission-table td {
+    text-align: center;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif !important;
+}
+
+#edit-button-permission {
+    margin-right: 10px;
+}
+
+#permission-table td.focus {
+    /* border: 0.1em solid #e5f9e4 !important; */
+    background-color: #e9fbfd !important;
+}
+
+#div-fieldset-permission {
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#div-fieldset-permission label {
+    display: flex;
+    margin-right: 10px;
+    text-align: center;
+}

@@ -1,0 +1,385 @@
+/* 檔案管理 contents.blade.php------------------------------------------------------------------- */
+.maintain-btn-select {
+  float: left;
+  width: 80px;
+  border-color: rgb(144, 144, 144);
+}
+
+.maintain-btn-upload {
+  float: left;
+}
+
+.maintain-btn-download {
+  border-color: rgb(36, 163, 29);
+  background: rgb(36, 163, 29);
+  margin-right: 10px;
+}
+
+.maintain-btn-delete {
+  margin-right: 10px;
+}
+
+#file-div-fieldset {
+  display: flex;
+  margin-left: 5%;
+}
+
+#file-div-fieldset label {
+  display: flex;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.div-fileList {
+  margin-left: 12%;
+  font-size: 15px;
+}
+
+.file-tbody tr:hover {
+  background-color: #f5f5f5 !important;
+}
+
+#file-title {
+  color: #1b8522;
+  caption-side: top;
+  font-style: italic;
+}
+
+#file-table {
+  width: 100% !important;
+}
+
+#file-table tr:hover {
+  background-color: #f5f5f5 !important;
+}
+
+/* 查詢機種 */
+#file-table_filter {
+  text-align: left;
+  float: none;
+}
+
+/* 查詢機種 label */
+#file-table_filter label {
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+/* 查詢機種 input */
+#file-table_filter input {
+  padding-left: 15px;
+  margin-left: 0;
+  height: 35px;
+  width: 200px;
+  font-size: 15px;
+}
+
+/* 分頁設置 */
+#file-table_paginate {
+  text-align: center;
+  float: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* 靠近按鈕時設置 */
+#file-table_paginate .paginate_button:hover {
+  background: none !important;
+  border-color: #00C1DE !important;
+  color: #00C1DE !important;
+}
+
+/* 當前頁面按鈕 */
+#file-table_paginate .paginate_button.current {
+  background: #00C1DE !important;
+  border-color: #00C1DE !important;
+  color: #FFFFFF !important;
+
+}
+
+/* 當前頁面為第一頁，或最後一頁時的前後按鈕 */
+#file-table_paginate .paginate_button.disabled {
+  display: none !important;
+}
+
+/* "顯示幾筆資料的設置" */
+#file-table_length label {
+  font-size: 15px !important;
+  margin-top: 5px !important;
+  margin-right: 10px !important;
+}
+
+#file-table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#file-table td {
+  vertical-align: middle !important;
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+/* 變更紀錄管理 record.blade.php------------------------------------------------------------------- */
+.record-div {
+  display: flex;
+}
+
+.record-div a {
+  color: black;
+}
+
+.record-div select {
+  width: 125px;
+  height: 30px;
+  border-radius: 0;
+}
+
+.record-div button {
+  height: 30px;
+  border-radius: 0;
+}
+
+#record-btn-search {
+  border-color: #5BC0DE;
+  background: #5BC0DE;
+  color: #FFFFFF;
+}
+
+/* 篩選中 */
+#record-btn-search.filter {
+  border-color: #949596;
+  background: #949596;
+  color: #FFFFFF;
+  /* pointer-events: none; */
+}
+
+/* 完成 */
+#record-btn-search.finish {
+  border-color: #5BC0DE;
+  background: #5BC0DE;
+  color: #FFFFFF;
+}
+
+/* 無資料查詢 */
+#record-btn-search.none {
+  border-color: #7a7a7a;
+  background: #eaeaea;
+  color: #7a7a7a;
+}
+
+/* 查詢紀錄中 */
+#record-btn-search.search {
+  border-color: #949596;
+  background: #949596;
+  color: #FFFFFF;
+}
+
+.record-subTable {
+  width: 30%;
+  background: #FBFBFB;
+  border: 2px #428BCA solid;
+}
+
+.record-subTable>thead>tr>th {
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+  text-align: center;
+  border: 2px #428BCA solid;
+}
+
+.record-subTable>tbody>tr>td {
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+  text-align: center;
+}
+
+.record-table th {
+  text-align: center;
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+.record-tbody-main td {
+  vertical-align: middle !important;
+  ;
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+.record-tbody-main tr:hover {
+  background-color: #f5f5f5 !important;
+}
+
+.record-tbody {
+  background-color: #FBFBFB;
+}
+
+.record-tbody td {
+  color: #585858;
+  font-weight: bolder;
+  border: none !important;
+  font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+.record-tbody td.right {
+  text-align: right;
+  font-weight: lighter;
+}
+
+.record-tbody td.left {
+  text-align: left;
+  font-weight: lighter;
+}
+
+.record-tbody div.right {
+  font-weight: lighter;
+}
+
+.record-tbody-div {
+  border: 1px black solid;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.record-td-btn {
+  margin-right: 2px;
+  margin-bottom: 5px;
+  padding: 2px;
+  pointer-events: none;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  border-color: #939191;
+  border-style: solid;
+  color: #585858;
+}
+
+/* 報表內容管理 contents.blade.php------------------------------------------------------------------- */
+
+.iso-tbody td {
+  vertical-align: middle !important;
+}
+
+.iso-tbody tr:hover {
+  background-color: #f5f5f5 !important;
+}
+
+/* Tab設定(報表簽章) */
+.iso-div-nav-tabs {
+  font-size: 16px;
+  margin: 0 5.5% 0 20px;
+  color: rgb(129, 128, 128) !important;
+}
+
+.iso-div-nav-tabs a:hover {
+  color: #f77009 !important;
+  background-color: #FFFFFF;
+}
+
+/* 設定tab之間的空隙 */
+#iso-nav-link-a {
+  color: rgb(129, 128, 128);
+  margin-right: -2px;
+}
+
+/* 靠近tab時的狀態 */
+#iso-nav-link-a:hover {
+  border-bottom-color: transparent;
+  margin-bottom: -1px;
+}
+
+/* 點選tab時的狀態 */
+#iso-nav-link-a.active {
+  border-bottom: 2px solid #f77009;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  color: #f77009;
+  margin-bottom: -1px;
+}
+
+.iso-form-div .input-large {
+  vertical-align: middle !important;
+  padding-left: 2%;
+  font-size: 15px;
+  text-align: left;
+  width: 180px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #8C8B8B;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border: 3px solid red;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+  line-height: 35px;
+  text-align: center;
+}
+
+.circle span {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: DFKai-sb;
+  color: red;
+}
+
+.circle-line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 3px solid red;
+}
+
+.circle-space {
+  height: 15px;
+}
+
+.sign-div {
+  display: inline-block;
+}
+
+.sign-table th, .sign-table td {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle !important;
+}
+
+.sign-table input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  text-align: left;
+  vertical-align: middle !important;
+}
+
+.maintain-btn-preview {
+  border-color: rgb(36, 163, 29);
+  background: rgb(36, 163, 29);
+}
+
+.maintain-btn-save {
+  border-color: #d2d7db;
+  background: #d2d7db;
+  margin-left: 10px;
+}
+
+/* 篩選中 */
+.maintain-btn-save.yet {
+  border-color: #949596;
+  background: #949596;
+  color: #FFFFFF;
+  pointer-events: none;
+}
+
+/* 完成 */
+.maintain-btn-save.finish {
+  border-color: #428BCA;
+  background: #428BCA;
+  color: #FFFFFF;
+}

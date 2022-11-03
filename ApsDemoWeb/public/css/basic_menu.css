@@ -1,0 +1,515 @@
+  /* Flex教學：https://nomichuang.medium.com/css-flex-%E5%B1%AC%E6%80%A7-ea2c1db1f925 */
+
+  /* 參數設定 parameter.blade.php------------------------------------------------------------------- */
+  #create-button-calendar {
+    /* margin-top:20px;
+  margin-left:20px; */
+    color: #FFFFFF;
+    background-color: #00C1DE;
+  }
+
+  #create-button-transport {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    background-color: #00C1DE;
+  }
+
+  .parameter-form-div .input-large {
+    vertical-align: middle !important;
+    margin-top: 3px;
+    padding-left: 2%;
+    font-size: 15px;
+    text-align: left;
+    width: 180px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+  }
+
+  .parameter-tbody tr:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  .parameter-tbody td {
+    vertical-align: middle !important;
+  }
+
+  /* 機種清單 equipment.blade.php------------------------------------------------------------------- */
+  #equipment-div-fieldset {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .equipment_label-used {
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 2%;
+    color: #000000;
+  }
+
+  .equipment_label-not-used {
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 2%;
+    color: #979595;
+  }
+
+  .equipment_input-used {
+    vertical-align: middle !important;
+    margin-right: 5%;
+    margin-top: 3px;
+    padding-left: 5px;
+    font-size: 15px;
+    text-align: left;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+  }
+
+  .equipment_input-not-used {
+    vertical-align: middle !important;
+    margin-right: 5%;
+    margin-top: 3px;
+    padding-left: 5px;
+    font-size: 15px;
+    text-align: left;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+    /* pointer-events:none; */
+  }
+
+  #equipment-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 130px;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  /* scrollbar設置 */
+  ::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.5em
+  }
+
+  #equipment-div {
+    margin-right: 20%;
+    margin-left: 2%;
+    width: 120%;
+  }
+
+  #equipment-title {
+    color: #1b8522;
+    caption-side: top;
+    font-style: italic;
+  }
+
+  #equipment-table {
+    width: 100% !important;
+  }
+
+  #equipment-table tr:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  /* 查詢機種 */
+  #equipment-table_filter {
+    text-align: left;
+    float: none;
+  }
+
+  /* 查詢機種 label */
+  #equipment-table_filter label {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+  }
+
+  /* 查詢機種 input */
+  #equipment-table_filter input {
+    padding-left: 15px;
+    margin-left: 0;
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  /* 分頁設置 */
+  #equipment-table_paginate {
+    margin-right: 20%;
+    text-align: center;
+    float: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  /* 靠近按鈕時設置 */
+  #equipment-table_paginate .paginate_button:hover {
+    background: none !important;
+    border-color: #00C1DE !important;
+    color: #00C1DE !important;
+  }
+
+  /* 當前頁面按鈕 */
+  #equipment-table_paginate .paginate_button.current {
+    background: #00C1DE !important;
+    border-color: #00C1DE !important;
+    color: #FFFFFF !important;
+  }
+
+  /* 當前頁面為第一頁，或最後一頁時的前後按鈕 */
+  #equipment-table_paginate .paginate_button.disabled {
+    display: none !important;
+  }
+
+  /* "顯示幾筆資料的設置" */
+  #equipment-table_length label {
+    font-size: 15px !important;
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+  }
+
+  #equipment-table td {
+    vertical-align: middle !important;
+  }
+
+  /* 期別與仕切維護 period.blade.php------------------------------------------------------------------- */
+
+  .main-flex {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .period-tbody tr:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  .period-div .input-small {
+    vertical-align: middle !important;
+    margin-top: 3px;
+    padding-left: 5px;
+    font-size: 15px;
+    text-align: left;
+    width: 100px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+  }
+
+  .period-div .input-small .not-used {
+    pointer-events: none;
+  }
+
+  .period-div .label-not-used {
+    margin-top: 5px;
+    margin-left: 5%;
+    color: #979595;
+  }
+
+  #ul-toggle {
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1.5px solid;
+    border-bottom-color: transparent;
+    border-top-color: #DDDDDD;
+    border-left-color: #DDDDDD;
+    border-right-color: #DDDDDD;
+  }
+
+  #ul-toggle button {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 8px;
+    border-color: #c9c4c4;
+    border-style: solid;
+    color: #696969;
+  }
+
+  #ul-toggle a {
+    color: #696969;
+  }
+
+  /* 期別與仕切維護模板 period_content.blade.php------------------------------------------------------------------- */
+
+  .period-title-a {
+    margin-bottom: 8px;
+    margin-left: 20px;
+    border-color: #5a5a5a;
+    border-style: solid;
+  }
+
+  /* 匯率設定 exchange.blade.php------------------------------------------------------------------- */
+
+  #section-half-a-year {
+    margin-top: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 8%;
+  }
+
+  #exchange-tab-content {
+    border: 1px solid;
+    border-top-color: transparent;
+    border-bottom-color: #DDDDDD;
+    border-left-color: #DDDDDD;
+    border-right-color: #DDDDDD;
+    margin-bottom: 8%;
+  }
+
+  #exchange-tab-content label {
+    color: black;
+    font-weight: lighter;
+  }
+
+  #exchange-tab-content input {
+    padding-left: 1%;
+    width: 130px;
+    height: 30px;
+  }
+
+  #dynamic-select-exchange {
+    width: 100px;
+    height: 32px;
+    padding-left: 10px;
+  }
+
+  /* 仕切維護 partition.blade.php------------------------------------------------------------------- */
+
+  #partition-tab-content {
+    margin-top: 15px;
+    margin-bottom: 10%;
+  }
+
+  #partition-th {
+    vertical-align: middle;
+    text-align: center !important;
+    /* font-weight:lighter; */
+    font-size: 14px;
+  }
+
+  #partition-td {
+    color: #666666;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: "Arial";
+  }
+
+  /* 仕切上半年的 DataTable------------------------------------------------------------------- */
+  #first-year-table {
+    width: 100% !important;
+  }
+
+  #first-year-table tr:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  /* 查詢機種 */
+  #first-year-table_filter {
+    text-align: left;
+    float: none;
+    margin-bottom: 2%;
+  }
+
+  /* 查詢機種 label */
+  #first-year-table_filter label {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+  }
+
+  /* 查詢機種 input */
+  #first-year-table_filter input {
+    padding-left: 15px;
+    margin-left: 0;
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  /* 分頁設置 */
+  #first-year-table_paginate {
+    text-align: center;
+    float: none;
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+
+  /* 靠近按鈕時設置 */
+  #first-year-table_paginate .paginate_button:hover {
+    background: none !important;
+    border-color: #00C1DE !important;
+    color: #00C1DE !important;
+  }
+
+  /* 當前頁面按鈕 */
+  #first-year-table_paginate .paginate_button.current {
+    background: #00C1DE !important;
+    border-color: #00C1DE !important;
+    color: #FFFFFF !important;
+  }
+
+  /* 當前頁面為第一頁，或最後一頁時的前後按鈕 */
+  #first-year-table_paginate .paginate_button.disabled {
+    display: none !important;
+  }
+
+  /* "顯示幾筆資料的設置" */
+  #first-year-table_length label {
+    font-size: 15px !important;
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+  }
+
+  /* 仕切下半年的 DataTable----------------------------------------------------------------------- */
+  #last-year-table {
+    width: 100% !important;
+  }
+
+  #last-year-table tr:hover {
+    background-color: #f5f5f5 !important;
+  }
+
+  /* 查詢機種 */
+  #last-year-table_filter {
+    text-align: left;
+    float: none;
+    margin-bottom: 2%;
+  }
+
+  /* 查詢機種 label */
+  #last-year-table_filter label {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+  }
+
+  /* 查詢機種 input */
+  #last-year-table_filter input {
+    padding-left: 15px;
+    margin-left: 0;
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  /* 分頁設置 */
+  #last-year-table_paginate {
+    text-align: center;
+    float: none;
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+
+  /* 靠近按鈕時設置 */
+  #last-year-table_paginate .paginate_button:hover {
+    background: none !important;
+    border-color: #00C1DE !important;
+    color: #00C1DE !important;
+  }
+
+  /* 當前頁面按鈕 */
+  #last-year-table_paginate .paginate_button.current {
+    background: #00C1DE !important;
+    border-color: #00C1DE !important;
+    color: #FFFFFF !important;
+
+  }
+
+  /* 當前頁面為第一頁，或最後一頁時的前後按鈕 */
+  #last-year-table_paginate .paginate_button.disabled {
+    display: none !important;
+  }
+
+  /* "顯示幾筆資料的設置" */
+  #last-year-table_length label {
+    font-size: 15px !important;
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+  }
+
+  /* 行事曆 schedule.blade.php------------------------------------------------------------------- */
+
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .title-div {
+    display: inline;
+    color: black;
+    font-size: 20px;
+  }
+
+  .title-div-form {
+    margin-top: 10px;
+  }
+
+  .title-select {
+    height: 25px;
+    width: 80px;
+    display: inline;
+  }
+
+  .title-div-button {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: inline;
+    color: black;
+    background-color: transparent;
+  }
+
+  .title-tr {
+    color: black;
+    background-color: #F5F6FB;
+  }
+
+  .title-tr th {
+    text-align: center;
+  }
+
+  .workday {
+    background-color: #ffffff;
+  }
+
+  .holiday {
+    background-color: #E6F7FF;
+  }
+
+  .today {
+    background-color: #FFFF99;
+  }
+
+  .not-day {
+    background-color: #DCDCDC;
+  }
+
+  #dialog-form-schedule {
+    height: 50px;
+    width: auto;
+  }
+
+  #form-title {
+    height: 10px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    line-height: 4.0em;
+  }

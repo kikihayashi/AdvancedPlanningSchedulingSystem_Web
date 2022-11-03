@@ -1,0 +1,1356 @@
+/* 共用區域 ------------------------------------------------------------------- */
+
+/* 編輯按鈕 */
+#project-btn-edit {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+/* SAP上傳按鈕 */
+#project-btn-sap {
+    border-color: #00C1DE;
+    background: #00C1DE;
+}
+
+/* Excel下載按鈕 */
+#project-btn-excel {
+    border-color: rgb(36, 163, 29);
+    background: rgb(36, 163, 29);
+}
+
+/* 清除按鈕 */
+#project-btn-clear {
+    border-color: gray;
+    background: none;
+    color: gray;
+}
+
+/* 重置按鈕 */
+#project-btn-reset {
+    border-color: gray;
+    background: none;
+    color: gray;
+}
+
+/* 儲存按鈕 */
+#project-btn-update {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 儲存按鈕 */
+#project-btn-save {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#project-edit-section {
+    margin-left: 20px;
+    margin-right: 5%;
+    margin-bottom: 8%;
+    /* border-color: #0c8510;
+    border-style: solid; */
+}
+
+#project-form-div {
+    margin-bottom: 3%;
+    /* border-color:#ff003f; 
+    border-style:solid; */
+}
+
+.project-title-table td {
+    border: none !important;
+    vertical-align: middle !important;
+    font-size: 13px;
+    color: #9b9b9b;
+}
+
+.project-title-table td.right {
+    text-align: right;
+}
+
+.project-title-table td.left {
+    text-align: left;
+}
+
+.project-title-table select {
+    vertical-align: middle !important;
+    font-size: 15px;
+    float: left;
+    height: 25px;
+    width: 60px;
+    padding-left: 5px;
+}
+
+.project-title-table input {
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: 0;
+    outline: 0;
+}
+
+.project-table td {
+    /* 如果要觀察表格排列，註解以下指令，並在要看的範圍加上table-bordered */
+    border: none !important;
+    vertical-align: middle !important;
+    font-size: 13px;
+}
+
+.project-table td.right {
+    text-align: right;
+}
+
+.project-table td.left {
+    text-align: left;
+}
+
+.project-table .input-month {
+    margin-top: 3px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 2%;
+    width: 80px;
+    height: 30px;
+    font-size: 13px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+}
+
+.project-table .input-not-used {
+    margin-top: 0px;
+    width: 140px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: lighter;
+    border: 0;
+    outline: 0;
+    height: 28px;
+    border-radius: 3px;
+}
+
+.project-table .input-small {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    width: 80px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+}
+
+.project-table .input-small-not-used {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    width: 80px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+    background: #F5F5F5;
+}
+
+.project-table .input-large {
+    vertical-align: middle !important;
+    font-size: 13px;
+    text-align: left;
+    width: 130px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+}
+
+.project-table .input-large-not-used {
+    vertical-align: middle !important;
+    font-size: 13px;
+    text-align: left;
+    width: 130px;
+    height: 28px;
+    border-radius: 3px;
+    background: #F5F5F5;
+    border: 1px solid #8C8B8B;
+}
+
+.project-table .select-large {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    min-height: 30px;
+    /* height: 30px; */
+    width: 200px;
+}
+
+.project-table .select-large-not-used {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    min-height: 30px;
+    /* height: 30px; */
+    width: 200px;
+    background: #F5F5F5;
+    color: #272727;
+}
+
+.project-table .select-middle {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    height: 30px;
+    width: 150px;
+    padding-left: 2px;
+}
+
+.project-table .select-middle-not-used {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    height: 30px;
+    width: 150px;
+    padding-left: 2px;
+    background: #F5F5F5;
+    color: #272727;
+}
+
+.project-table .select-small {
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    height: 30px;
+    width: 80px;
+}
+
+.project-table .textarea-small {
+    padding: 5px;
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    height: 50px;
+    width: 150px;
+    border-radius: 2px;
+}
+
+.project-table .textarea-large {
+    padding: 5px;
+    vertical-align: middle !important;
+    font-size: 13px;
+    float: left;
+    height: 50px;
+    width: 400px;
+    border-radius: 2px;
+}
+
+#project-span {
+    float: left;
+    margin-left: 5%;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table.fixed {
+    table-layout: fixed;
+}
+
+table.fixed td {
+    overflow: hidden;
+}
+
+option {
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+select {
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+/* 審核那區下拉式選單設置 */
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #f0f0f0 !important;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.progress-table {
+    margin-bottom: 0 !important;
+}
+
+/* 進度條設置 */
+.progress-table td {
+    border: none !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    padding: 2px !important;
+}
+
+#progress-role-button:disabled,
+#progress-role-button[disabled] {
+    margin-right: 8px;
+    padding: 2.5px;
+    color: #EB2F96;
+    background-color: #FFF0F6;
+    border-color: #FFADD2;
+    border-style: solid;
+    border-width: 1.2px;
+}
+
+/* 圓點-啟動 */
+.progress-dot.now {
+    height: 10px;
+    width: 10px;
+    background-color: #00C1DE;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* 圓點-完成 */
+.progress-dot.finish {
+    height: 8px;
+    width: 8px;
+    background-color: #00C1DE;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.5px;
+}
+
+/* 圓點-尚未啟動 */
+.progress-dot.yet {
+    height: 8px;
+    width: 8px;
+    background-color: #BFBFBF;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.5px;
+}
+
+/* 文字左右拉線 */
+.progress-line {
+    font-size: 16px;
+    margin: 2px;
+}
+
+/* 文字左右拉線-啟動 */
+.progress-line.finish:after {
+    content: "";
+    display: inline-block;
+    border-top: 3.5px solid #00C1DE;
+    width: 41vh;
+    vertical-align: middle;
+}
+
+/* 文字左右拉線-關閉 */
+.progress-line.yet:after {
+    content: "";
+    display: inline-block;
+    border-top: 3.5px solid #E1E6EB;
+    width: 41vh;
+    vertical-align: middle;
+}
+
+.progress-content.now {
+    visibility: visible;
+    color: #595959;
+}
+
+.progress-content.finish {
+    visibility: visible;
+    color: #9c9c9c;
+}
+
+.progress-content.yet {
+    visibility: hidden;
+    color: #FFFFFF;
+}
+
+.progress-title.now {
+    font-size: 16px;
+    color: #626262;
+}
+
+.progress-title.finish {
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.progress-title.yet {
+    font-size: 16px;
+    color: #BFBFBF;
+}
+
+/* 轉入SAP--------------------------------------------------------------------------------------------*/
+#sap-title {
+    color: #1b8522;
+    caption-side: top;
+    font-style: italic;
+}
+
+#sap-table {
+    width: 100% !important;
+}
+
+#sap-table_wrapper {
+    margin-right: 1%;
+}
+
+#sap-table tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+/* 查詢機種 */
+#sap-table_filter {
+    text-align: left;
+    float: none;
+}
+
+/* 查詢機種 label */
+#sap-table_filter label {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+/* 查詢機種 input */
+#sap-table_filter input {
+    padding-left: 15px;
+    margin-left: 0;
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+}
+
+/* 分頁設置 */
+#sap-table_paginate {
+    text-align: center;
+    float: none;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+/* 靠近按鈕時設置 */
+#sap-table_paginate .paginate_button:hover {
+    background: none !important;
+    border-color: #00C1DE !important;
+    color: #00C1DE !important;
+}
+
+/* 當前頁面按鈕 */
+#sap-table_paginate .paginate_button.current {
+    background: #00C1DE !important;
+    border-color: #00C1DE !important;
+    color: #FFFFFF !important;
+
+}
+
+/* 當前頁面為第一頁，或最後一頁時的前後按鈕 */
+#sap-table_paginate .paginate_button.disabled {
+    display: none !important;
+}
+
+/* "顯示幾筆資料的設置" */
+#sap-table_length label {
+    font-size: 15px !important;
+    margin-top: 5px !important;
+    margin-right: 10px !important;
+}
+
+#sap-table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+#sap-table td {
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+}
+
+/* 大計劃管理 management.blade.php------------------------------------------------------------------- */
+
+.numberLabel {
+    margin-top: 5px;
+    font-family: arial, "Microsoft JhengHei", sans-serif;
+    line-height: 1.5em;
+}
+
+.management-list-section {
+    /* border-color: #f30e0e;
+    border-style: solid; */
+    height: 400px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.management-list-div-title {
+    /* border-color: #0c8510;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 1400px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.management-list-div-title>table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1.2px solid rgb(112, 112, 112) !important;
+}
+
+.management-list-div-content {
+    /* border-color: #490edf;
+    border-style: solid; */
+    margin-right: 2%;
+    padding-bottom: 2%;
+    width: 1400px;
+    position: relative;
+    display: flex;
+}
+
+.management-list-table {
+    height: 400px;
+}
+
+.management-list-table.left {
+    background: #F5F6FB;
+    position: sticky;
+    left: 0;
+    width: 10%;
+    margin: 0px !important;
+}
+
+.management-list-table.left td {
+    font-size: 14px;
+    height: 80px;
+    border: 0.07em solid #BFBFBF;
+}
+
+.management-list-table.middle {
+    width: 90%;
+    background-color: #FFFFFF;
+    margin: 0px !important;
+}
+
+.management-list-table.middle td {
+    font-size: 14px;
+    height: 80px;
+    border: 0.07em solid #BFBFBF;
+}
+
+.management-list-table.middle tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.management-list-table.middle tr.focus {
+    border: 0.1em solid #6ec6d3 !important;
+    background-color: #e9fbfd !important;
+}
+
+.management-list-table.middle td.focus {
+    background-color: #e5f9e4 !important;
+}
+
+.management-list-td-left {
+    text-align: left;
+    vertical-align: middle !important;
+}
+
+.management-list-td-middle {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.management-list-td-right {
+    text-align: right;
+    vertical-align: middle !important;
+}
+
+.management-list-last-td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.management-form .input-small {
+    vertical-align: middle !important;
+    padding-left: 2%;
+    font-size: 15px;
+    float: left;
+    width: 150px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+}
+
+/* 年度生產計劃 productionYear.blade.php------------------------------------------------------------------- */
+
+.productionYear-list-section {
+    /* border-color: #5208e6;
+    border-style: solid; */
+    height: 400px;
+    margin-bottom: 6%;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.productionYear-list-div-title {
+    /* border-color: #0c8510;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 2000px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.productionYear-list-div-title>table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1.2px solid rgb(112, 112, 112) !important;
+}
+
+.productionYear-list-div-content {
+    /* border-color: #490edf;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 2000px;
+    position: relative;
+    display: flex;
+}
+
+.productionYear-list-table {
+    height: 400px;
+}
+
+.productionYear-list-table.left {
+    background: #F5F6FB;
+    position: sticky;
+    left: 0;
+    width: 9%;
+    margin: 0px !important;
+}
+
+.productionYear-list-table.left td {
+    font-size: 14px;
+    height: 80px;
+    border: 0.07em solid #BFBFBF;
+}
+
+.productionYear-list-table.middle {
+    width: 91%;
+    background-color: #FFFFFF;
+    margin: 0px !important;
+}
+
+.productionYear-list-table.middle td {
+    font-size: 12.5px;
+    height: 80px;
+    border: 0.07em solid #BFBFBF;
+}
+
+.productionYear-list-table.middle tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.productionYear-list-table.middle tr.focus {
+    border: 0.1em solid #6ec6d3 !important;
+    background-color: #e9fbfd !important;
+}
+
+.productionYear-list-div-bottom {
+    /* border-color: #461ae6;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 2000px;
+    bottom: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.productionYear-list-div-bottom td {
+    text-align: center;
+    vertical-align: middle !important;
+    height: 10px;
+    font-size: 15px;
+    font-weight: thin;
+    border: 0.7px thin rgb(112, 112, 112) !important;
+}
+
+#productionYear-list-td-left {
+    text-align: left;
+    vertical-align: middle;
+}
+
+#productionYear-list-td-middle {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#productionYear-list-td-right {
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* Tab設定  */
+.productionYear-div-nav-tabs {
+    /* border-color:#2e0cec; 
+      border-style:solid; */
+    font-size: 16px;
+    margin: 0;
+    color: rgb(129, 128, 128);
+}
+
+/* 設定tab之間的空隙 */
+#productionYear-nav-link-a {
+    margin-right: 0px;
+}
+
+/* 靠近tab時的狀態 */
+#productionYear-nav-link-a:hover {
+    border-bottom-color: transparent;
+    margin-bottom: 0px;
+}
+
+/* 點選tab時的狀態 */
+#productionYear-nav-link-a.active {
+    font-weight: bold;
+    border: 1.5px solid #707070;
+    border-bottom-color: transparent;
+    color: #000000;
+    background-color: #F5F6FB;
+    margin-bottom: -1px;
+}
+
+/* 靠近tab時的狀態 */
+.productionYear-div-nav-tabs a:hover {
+    color: #000000;
+    background-color: rgb(230, 230, 230);
+}
+
+#productionYear-hr {
+    background-color: #1890FF;
+    width: 100%;
+    height: 0.8px;
+    border: none;
+    margin: 0 !important;
+}
+
+#productionYear-isHidden-button:disabled,
+#productionYear-isHidden-button[disabled] {
+    padding: 2.5px;
+    margin-left: 5px;
+    color: #FA8C16;
+    background-color: #FFF7E6;
+    border-color: #FFD591;
+    border-style: solid;
+    border-width: 1.2px;
+}
+
+/* 年度出荷計劃 shippingYear.blade.php------------------------------------------------------------------- */
+
+.addLotButton {
+    border-color: #000000;
+    border-style: dashed;
+    background-Color: white;
+    font-size: 14px;
+    padding: 2px;
+    width: 400px;
+    height: 35px;
+}
+
+/* 移除表單 */
+.removeLot {
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.removeLot a {
+    background: rgb(255, 0, 0);
+    color: #FFFFFF;
+    vertical-align: middle;
+}
+
+.removeLot a:hover {
+    color: #FFFFFF;
+    background: rgb(255, 0, 0);
+}
+
+.lotLabel {
+    margin-top: 5px;
+    font-family: arial, "Microsoft JhengHei", sans-serif;
+    line-height: 1.5em;
+}
+
+#div-fieldset-shippingYear {
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.shippingYear-list-section {
+    /* border-color: #5208e6;
+    border-style: solid; */
+    height: 440px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.shippingYear-list-div-title {
+    /* border-color: #0c8510;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 1900px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.shippingYear-list-div-title>table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    height: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1.2px solid rgb(112, 112, 112) !important;
+}
+
+.shippingYear-list-div-content {
+    /* border-color: #490edf;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 1900px;
+    position: relative;
+    display: flex;
+}
+
+.shippingYear-list-table {
+    /* border-color: #eab70f;
+    border-style: solid; */
+    height: 400px;
+}
+
+.shippingYear-list-table.left {
+    background: #F5F6FB;
+    position: sticky;
+    left: 0;
+    width: 8%;
+    margin: 0px !important;
+}
+
+.shippingYear-list-table.left td {
+    font-size: 14px;
+    /* height: 130px; */
+    border: 0.07em solid #BFBFBF;
+}
+
+.shippingYear-list-table.middle {
+    width: 92%;
+    background-color: #FFFFFF;
+    margin: 0px !important;
+}
+
+.shippingYear-list-table.middle td {
+    font-size: 12.5px;
+    /* height: 130px; */
+    border: 0.07em solid #BFBFBF;
+}
+
+.shippingYear-list-table.middle tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.shippingYear-list-table.middle tr.focus {
+    border: 0.1em solid #6ec6d3 !important;
+    background-color: #e9fbfd !important;
+}
+
+.shippingYear-list-table.middle td.focus {
+    /* border: 0.1em solid #e5f9e4 !important; */
+    background-color: #e5f9e4 !important;
+}
+
+.shippingYear-list-div-bottom {
+    /* border-color: #461ae6;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 1900px;
+    bottom: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.shippingYear-list-div-bottom td {
+    text-align: center;
+    vertical-align: middle !important;
+    height: 10px;
+    font-size: 12px;
+    font-weight: thin;
+    border: 0.7px thin rgb(112, 112, 112) !important;
+}
+
+.shippingYear-list-td-left {
+    text-align: left;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    line-height: 1.5em;
+}
+
+.shippingYear-list-td-middle {
+    text-align: center;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    line-height: 1.5em;
+}
+
+.shippingYear-list-td-right {
+    text-align: right;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Tab設定  */
+.shippingYear-div-nav-tabs {
+    /* border-color:#2e0cec; 
+      border-style:solid; */
+    font-size: 16px;
+    margin: 0 20px 0 20px;
+    color: rgb(129, 128, 128);
+}
+
+/* 設定tab之間的空隙 */
+#shippingYear-nav-link-a {
+    margin-right: 0px;
+}
+
+/* 靠近tab時的狀態 */
+#shippingYear-nav-link-a:hover {
+    border-bottom-color: transparent;
+    margin-bottom: 0px;
+}
+
+/* 點選tab時的狀態 */
+#shippingYear-nav-link-a.active {
+    font-weight: bold;
+    border: 1.5px solid #707070;
+    border-bottom-color: transparent;
+    color: #000000;
+    background-color: #F5F6FB;
+    margin-bottom: -1px;
+}
+
+/* 靠近tab時的狀態 */
+.shippingYear-div-nav-tabs a:hover {
+    color: #000000;
+    background-color: rgb(230, 230, 230);
+}
+
+#shippingYear-hr {
+    background-color: #1890FF;
+    width: 100%;
+    height: 0.8px;
+    border: none;
+    margin: 0 !important;
+}
+
+#shippingYear-isHidden-button:disabled,
+#shippingYear-isHidden-button[disabled] {
+    padding: 2.5px;
+    margin-left: 5px;
+    color: #FA8C16;
+    background-color: #FFF7E6;
+    border-color: #FFD591;
+    border-style: solid;
+    border-width: 1.2px;
+}
+
+.lotForm .input-large {
+    vertical-align: middle !important;
+    margin-top: 2px;
+    padding-left: 2%;
+    font-size: 14px;
+    text-align: left;
+    width: 180px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #8C8B8B;
+}
+
+/* 月度生產計劃 productionMonth.blade.php------------------------------------------------------------------- */
+
+/* 文字左右拉線(月度生產日期) */
+.with-line-icon {
+    display: block;
+    text-align: center;
+    color: #8C8B8B;
+    font-size: 16px;
+}
+
+.with-line-icon::before {
+    /* margin-top: 20px; */
+    content: "";
+    display: inline-block;
+    border-top: 5px solid #0e7eed;
+    width: 100%;
+    vertical-align: middle;
+    /* margin: 0 0.1em; */
+}
+
+.grid-container {
+    /* border-color: #f30e0e;
+    border-style: solid; */
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    gap: 0px;
+    background-color: #FFFFFF;
+}
+
+.grid-item {
+    height: 40px;
+    background-color: #FFFFFF;
+    color: #2196F3;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 1.5px solid #2196F3;
+}
+
+.productionMonth-list-section {
+    /* border-color: #5208e6;
+    border-style: solid; */
+    height: 400px;
+    margin-bottom: 6%;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.productionMonth-list-div-title {
+    /* border-color: #0c8510;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 2000px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.productionMonth-list-div-title>table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1.2px solid rgb(112, 112, 112) !important;
+}
+
+.productionMonth-list-div-content {
+    /* border-color: #490edf;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 2000px;
+    position: relative;
+    display: flex;
+}
+
+.productionMonth-list-table {
+    /* border-color: #f30e0e;
+    border-style: solid; */
+    height: 400px;
+}
+
+.productionMonth-list-table.left {
+    background: #F5F6FB;
+    position: sticky;
+    left: 0;
+    width: 8%;
+    margin: 0px !important;
+}
+
+.productionMonth-list-table.left td {
+    font-size: 14px;
+    height: 70px;
+    border: 0.07em solid #BFBFBF;
+}
+
+.productionMonth-list-table.middle {
+    width: 92%;
+    background-color: #FFFFFF;
+    margin: 0px !important;
+}
+
+.productionMonth-list-table.middle td {
+    font-size: 12.5px;
+    height: 70px;
+    border: 0.07em solid #BFBFBF;
+}
+
+.productionMonth-list-table.middle tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.productionMonth-list-table.middle tr.focus {
+    border: 0.1em solid #6ec6d3 !important;
+    background-color: #e9fbfd !important;
+    /* background-color: #e5f9e4 !important; */
+}
+
+.productionMonth-list-div-bottom {
+    /* border-color: #0c8510;
+    border-style: solid; */
+    margin-right: 2%;
+    width: 2000px;
+    bottom: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.productionMonth-list-div-bottom td {
+    text-align: center;
+    vertical-align: middle;
+    height: 10px;
+    font-size: 15px;
+    font-weight: thin;
+    border: 0.7px thin rgb(112, 112, 112) !important;
+}
+
+#productionMonth-list-td-left {
+    text-align: left;
+    vertical-align: middle;
+}
+
+#productionMonth-list-td-middle {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#productionMonth-list-td-right {
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* 月度出荷計劃 shippingMonth.blade.php------------------------------------------------------------------- */
+
+/* 移除日期欄 */
+.removeDate {
+    float: right;
+    border-radius: 50%;
+    width: 19px;
+    height: 15px;
+    text-align: center;
+    padding-bottom: 17px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.removeDate a {
+    color: rgb(255, 0, 0);
+    vertical-align: middle;
+
+}
+
+.removeDate a:hover {
+    background: transparent;
+    color: rgb(255, 0, 0);
+}
+
+.shippingMonth-list-section {
+    /* border-color: #5208e6;
+    border-style: solid; */
+    height: 440px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.shippingMonth-list-div-title {
+    /* border-color: #0c8510;
+    border-style: solid; */
+    margin-right: 2%;
+    /* width: 800px; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.shippingMonth-list-div-title>table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    height: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1.2px solid rgb(112, 112, 112) !important;
+}
+
+.shippingMonth-list-div-content {
+    /* border-color: #490edf;
+    border-style: solid; */
+    margin-right: 2%;
+    /* width: 800px; */
+    position: relative;
+    display: flex;
+}
+
+.shippingMonth-list-table {
+    /* border-color: #eab70f;
+    border-style: solid; */
+    height: 400px;
+}
+
+.shippingMonth-list-table.left {
+    /* border-color: #1a0fea;
+    border-style: solid; */
+    background: #F5F6FB;
+    position: sticky;
+    left: 0;
+    /* width: 25%; */
+    margin: 0px !important;
+}
+
+.shippingMonth-list-table.left td {
+    font-size: 14px;
+    /* height: 130px; */
+    /* border: 0.4px solid #BFBFBF; */
+    border: 0.07em solid #BFBFBF;
+}
+
+.shippingMonth-list-table.middle {
+    /* border-color: #487ac9;
+    border-style: solid; */
+    /* width: 75%; */
+    background-color: #FFFFFF;
+    margin: 0px !important;
+}
+
+.shippingMonth-list-table.middle td {
+    font-size: 12.5px;
+    /* height: 130px; */
+    /* border: 1px solid #BFBFBF; */
+    border: 0.07em solid #BFBFBF;
+}
+
+.shippingMonth-list-table.middle tr:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.shippingMonth-list-table.middle tr.focus {
+    border: 0.1em solid #6ec6d3 !important;
+    background-color: #e9fbfd !important;
+}
+
+.shippingMonth-list-table.middle td.focus {
+    /* border: 0.1em solid #e5f9e4 !important; */
+    background-color: #e5f9e4 !important;
+}
+
+.shippingMonth-list-div-bottom {
+    /* border-color: #e6611a;
+    border-style: solid; */
+    margin-right: 2%;
+    /* width: 800px; */
+    bottom: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.shippingMonth-list-div-bottom td {
+    text-align: center;
+    vertical-align: middle !important;
+    height: 10px;
+    font-size: 12px;
+    font-weight: thin;
+    border: 0.7px thin rgb(112, 112, 112) !important;
+}
+
+.shippingMonth-list-td-left {
+    text-align: left;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    line-height: 1.5em;
+}
+
+.shippingMonth-list-td-middle {
+    text-align: center;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    line-height: 1.5em;
+}
+
+.shippingMonth-list-td-right {
+    text-align: right !important;
+    vertical-align: middle !important;
+    font-family: arial, "Microsoft JhengHei", 微軟正黑體, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Tab設定  */
+.shippingMonth-div-nav-tabs {
+    font-size: 16px;
+    margin: 0 20px 0 20px;
+    color: rgb(129, 128, 128) !important;
+}
+
+/* 靠近tab時的狀態 */
+.shippingMonth-div-nav-tabs a:hover {
+    color: #FA8C16 !important;
+    background-color: #FFFFFF;
+}
+
+/* 設定tab之間的空隙 */
+#shippingMonth-nav-link-a {
+    color: rgb(129, 128, 128);
+    margin-right: 0px;
+}
+
+/* 靠近tab時的狀態 */
+#shippingMonth-nav-link-a:hover {
+    border-bottom-color: transparent;
+    margin-bottom: 0px;
+}
+
+/* 點選tab時的狀態 */
+#shippingMonth-nav-link-a.active {
+    font-weight: bold;
+    border: 1.5px solid #707070;
+    border-bottom-color: transparent;
+    color: #000000;
+    background-color: #F5F6FB;
+    margin-bottom: -1px;
+}
+
+
+#shippingMonth-hr {
+    background-color: #1890FF;
+    width: 100%;
+    height: 0.8px;
+    border: none;
+    margin: 0 !important;
+}
+
+#shippingMonth-isHidden-button:disabled,
+#shippingMonth-isHidden-button[disabled] {
+    padding: 2.5px;
+    margin-left: 5px;
+    color: #FA8C16;
+    background-color: #FFF7E6;
+    border-color: #FFD591;
+    border-style: solid;
+    border-width: 1.2px;
+}

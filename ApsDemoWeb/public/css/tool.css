@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+/* 置中用法 */
+/* .div-center-sample {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* 顯示成功錯誤session設置 */
+#system-session {
+  width: 170vh;
+  margin-bottom: -15px;
+  margin-top: 5px;
+  margin-left: 3.5%;
+  margin-right: 2%;
+  z-index: 1;
+  position: fixed;
+}
+
+/* Tab設定----------------------------------------------------------------  */
+.div-nav-tabs {
+  font-size: 16px;
+  margin: 0 5.5% 0 20px;
+  color: rgb(129, 128, 128);
+}
+
+/* 靠近Tab設置 */
+.div-nav-tabs a:hover {
+  color: #00C1DE;
+  background-color: rgb(230, 230, 230);
+}
+
+/* 設定tab之間的空隙 */
+#nav-link-a {
+  margin-right: -2px;
+}
+
+/* 靠近tab時的狀態 */
+#nav-link-a:hover {
+  border-bottom-color: transparent;
+  margin-bottom: -1px;
+}
+
+/* 點選tab時的狀態 */
+#nav-link-a.active {
+  border-top: 2px solid;
+  border-bottom-color: transparent;
+  border-top-color: #00C1DE;
+  border-left-color: #DDDDDD;
+  border-right-color: #DDDDDD;
+  color: #00C1DE;
+  margin-bottom: -1px;
+}
+
+/* 子Tab設定--------------------------------------------------------------  */
+.div-nav-tabs-sub {
+  font-size: 16px;
+  margin: 0 5.5% 0 20px;
+  color: rgb(129, 128, 128);
+}
+
+/* 靠近子Tab設置 */
+.div-nav-tabs-sub a:hover {
+  color: #f77009;
+  background-color: rgb(230, 230, 230);
+}
+
+/* 設定子tab之間的空隙 */
+#nav-link-a-sub {
+  margin-right: -2px;
+}
+
+/* 靠近子tab時的狀態 */
+#nav-link-a-sub:hover {
+  border-bottom-color: transparent;
+  margin-bottom: -1px;
+}
+
+/* 點選子tab時的狀態 */
+#nav-link-a-sub.active {
+  border-top: 2px solid;
+  border-bottom-color: transparent;
+  border-top-color: #f77009;
+  border-left-color: #DDDDDD;
+  border-right-color: #DDDDDD;
+  color: #f77009;
+  margin-bottom: -1px;
+}
+
+/* 對話框設置----------------------------------------------- */
+.ui-dialog .ui-state-error {
+  padding: .3em;
+}
+
+/* 對話框標題 */
+.validateTips {
+  margin-left: 15%;
+  margin-top: 5%;
+  border: 0px solid transparent;
+  font-size: 1.0em;
+  font-weight: 0;
+  line-height: 0.05em;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* 表單設置------------------------------------------------- */
+#div-fieldset {
+  display: flex;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#div-fieldset label {
+  display: flex;
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* DataTable設置--------------------------------------------- */
+
+/* 載入動畫 */
+.dataTables_processing {
+  background: none !important;
+}
+
+/* 載入動畫3498db */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  margin-left: 47%;
+  margin-bottom: 10%;
+}
+
+.dataTables_wrapper {
+  font-size: 13px;
+}
+
+/* 文字左右拉線設置--------------------------------------------- */
+.with-line {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+
+.with-line:before,
+.with-line:after {
+  content: "";
+  display: inline-block;
+  border-top: 1.2px solid #c7c8c9;
+  width: var(--width);
+  vertical-align: middle;
+}
+
+/*登入、註冊、修改個人資料表單----------------------------------------------------------------------------------------*/
+
+/* 登入主要內容 */
+.content-wrapper-login {
+  /* border-color: #3711df;
+  border-style: solid; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.content-wrapper-login table>thead>tr>th>div {
+  margin: 0 auto;
+}
+
+.content-wrapper-login table>thead>tr>th {
+  text-align: center !important;
+}
+
+.login-bottom-title {
+  font-weight: lighter;
+  color: #9a9999;
+  font-size: 15px;
+  margin-top: 6.3%;
+}
+
+.register-bottom-title {
+  font-weight: lighter;
+  color: #9a9999;
+  font-size: 15px;
+  margin-top: 4%;
+}
+
+/* 回上一頁 */
+.back {
+  position: relative;
+  margin-top: 10px;
+  float: right;
+  color: #a6a6a6;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+
+/* 註冊按鈕 */
+.register-btn {
+  width: 100%;
+  height: 35px;
+  background: #fafafa;
+  border: 1px #cacaca solid !important;
+  font-size: 15px;
+  color: #878787;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+/* 註冊 table */
+.login-table {
+  border: none !important;
+  width: 82%;
+  margin-top: 1%;
+  margin-bottom: 8%;
+}
+
+/* 圖片 */
+.logo-img {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: -20px;
+  padding-bottom: 4%;
+  width: 20%;
+}
+
+/* 名稱 */
+.logo-title {
+  color: #404681;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+form .txt_field {
+  position: relative;
+  border-bottom: 1.5px solid #adadad;
+  margin: 20px 0;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #8b8b8b;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field span::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+  top: -5px;
+  color: #2691d9;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 35px;
+  border: 1px solid;
+  background: #00C1DE;
+  /* border-radius: 10px; */
+  font-size: 15px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  border-color: #2691d9;
+  transition: .5s;
+}
+
+::-webkit-input-placeholder { /* Chrome, Safari */
+  color: #a1a1a1;
+}
+
+
+/* label,
+input {
+  display: block;
+}
+
+input.text {
+  padding: .4em;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin-top: 25px;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin: .6em 0;
+} */
+
+/* 載入動畫需要 */
+@-webkit-keyframes spin {
+  /* 0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  } */
+}
+
+/* 載入動畫需要 */
+@keyframes spin {
+  /* 0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  } */
+}

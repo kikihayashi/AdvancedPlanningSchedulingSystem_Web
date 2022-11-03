@@ -1,0 +1,274 @@
+/* 參考範本：https://codepen.io/truongtx-ccvn/pen/qLXGKV */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    background: #ffffff;
+}
+
+/* 主頁面 */
+.wrapper {
+    /* border-color: #187e37;
+    border-style: solid; */
+    position: fixed;
+    top: 0;
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    align-items: stretch;
+}
+
+/* 內容設定 */
+.content-wrapper {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+/* 主要內容 */
+#content-main {
+    /* border-color: #3711df;
+    border-style: solid; */
+    position: relative;
+    height: 100%;
+    margin-left: 180px;
+    overflow-y: auto;
+    transition: all 0.3s;
+}
+
+/* 左右縮放 */
+#content-main.active {
+    margin-left: 0px;
+}
+
+/* 內部左框選項設置(不要有底線、移動時變化慢0.3秒) */
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* 分隔線 */
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* scrollbar的設置 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* scrollbar軌道顏色 */
+::-webkit-scrollbar-track {
+    background: #D2D5D8;
+    border-radius: 10px;
+}
+
+/* 未碰到scrollbar時的顏色 */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* 碰到scrollbar時的顏色 */
+::-webkit-scrollbar-thumb:hover {
+    background: #6E6E6E;
+}
+
+/* scrollbar的設置，選項按鈕欄框設置 */
+#sidebar {
+    /* border-color: #e8900b;
+    border-style: solid; */
+    position: fixed;
+    min-width: 180px;
+    max-width: 180px;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 5%;
+    background: #EAEDF1;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+/* 左右縮放 */
+#sidebar.active {
+    margin-left: -180px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    border-bottom: 0px solid #47748b;
+}
+
+#sidebar ul p {
+    padding-left: 20px;
+    font-size: 15px;
+    display: block;
+    background-color: #b3aeae;
+    color: rgb(0, 0, 0)
+}
+
+/* 最上面的文字設置 */
+#sidebar-ul-a {
+    padding-left: 11%;
+    padding-top: 14%;
+    font-weight: bold;
+    height: 63px;
+    font-size: 0.95em;
+    display: block;
+    background-color: #D9DEE4;
+    color: #4C4D50;
+}
+
+/* 未展開時的選項設置 */
+#sidebar ul li a {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.0em;
+    display: block
+}
+
+/* 選取選項時的色彩 */
+#sidebar ul li a:visited {
+    color: rgb(0, 0, 0);
+    background: #ffffff
+}
+
+/* 靠近選項時的變化 */
+#sidebar ul li a:hover {
+    /* color: #7386D5;
+    background: #fff; */
+    color: rgb(0, 0, 0);
+    background: #ffffff
+}
+
+/* 展開選項時的設置 */
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: rgb(0, 0, 0);
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* 展開選項時的字體設置 */
+ul ul a {
+    font-size: 1.0em !important;
+    padding-left: 30px !important;
+}
+
+/* 縮放按鈕 */
+#sidebarCollapse {
+    color: #00C1DE;
+    margin-top: 19px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+/* 主畫面標題 */
+#title-span {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+/* @media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+} */
+
+/* ---------------------------------------------------------------- */
+
+body {
+    /* background: #ffffff; */
+}
+
+/*  */
+p {
+    /* font-size: 1.1em;
+    font-weight: 300;
+    line-height: 4.0em;
+    color: #999; */
+}
+
+ul.CTAs {
+    /* padding: 20px; */
+}
+
+ul.CTAs a {
+    /* text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px; */
+}
+
+a.download {
+    /* background: #fff;
+    color: #7386D5; */
+}
+
+a.article,
+a.article:hover {
+    /* background: #6d7fcc !important;
+    color: #fff !important; */
+}
+
+.navbar {
+    /* background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar-btn {
+    /* box-shadow: none;
+    outline: none !important;
+    border: none; */
+}
+
+#content {
+    /* width: 100%; */
+    /* padding: 20px;
+    min-height: 100%;
+    transition: all 0.3s; */
+    /* height: 100vh; */
+}
+
+.foo:visited {
+    /* color: #f00;
+    background: #ffffff */
+}
